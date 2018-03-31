@@ -1,22 +1,13 @@
 $(document).ready(function(){
+  $(".landing-text").css("display",'none');
+  $(".landing-text").slideDown(1500);
+});
+$(document).ready(function(){
   $(".column").css("display",'none');
   $(".column").slideDown(1500);
 });
 
-$(document).ready(function(){
-  $(".landing-text").css("display",'none');
-  $(".landing-text").slideDown(1500);
-});
 
-const menuButton = document.getElementById("menu-button");
-const mobileNav = document.querySelector(".mobile-nav");
-
-menuButton.addEventListener("click", openMenu);
-
-function openMenu() {
-  mobileNav.classList.toggle("is-open");
-  this.classList.toggle("square");
-}
 function openModal() {
   document.getElementById('myModal').style.display = "block";
   document.getElementById('navbar').style.display = "none";
@@ -52,4 +43,7 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}

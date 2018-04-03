@@ -10,13 +10,12 @@ $(document).ready(function(){
 
 function openModal() {
   document.getElementById('myModal').style.display = "block";
-  document.getElementById('navbar').style.display = "none";
+  document.getElementById('navbar').style.visibility = "hidden";
 }
 
 function closeModal() {
   document.getElementById('myModal').style.display = "none";
-  document.getElementById('navbar').style.display = "block";
-
+  document.getElementById('navbar').style.visibility = "visible";
 }
 
 var slideIndex = 1;

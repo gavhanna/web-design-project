@@ -1,8 +1,7 @@
-const menuButton = document.getElementById("menu-button");
-const mobileNav = document.querySelector(".mobile-nav");
-
-
 $(document).ready(function () {
+  const menuButton = document.getElementById("menu-button");
+  const mobileNav = document.querySelector(".mobile-nav");
+
   $(".landing-text").css("display", 'none');
   $(".landing-text").slideDown(1500);
   $(".column").css("display", 'none');

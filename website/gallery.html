@@ -14,12 +14,13 @@
 <link rel="stylesheet" href="css/main.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/main.js"></script>
+
 <body>
 
   <div class="bg-image2"></div>
   <div id="wrapper">
     <header id="navbar">
-      <div class="menu-button"></div>
+      <div class="menu-button" id="menu-button"></div>
       <div class="mobile-nav">
         <ul>
           <li class="mobile-nav-item">
@@ -34,6 +35,9 @@
           <li class="mobile-nav-item">
             <a class="nav-link-btn" href="#">Contact</a>
           </li>
+          <li class="mobile-nav-item">
+            <a class="nav-link-btn" href="gallery.html">Gallery</a>
+          </li>
         </ul>
       </div>
       <nav class="desktop-nav">
@@ -45,9 +49,9 @@
             <a class="nav-link-btn" href="#">Reserve</a>
           </li>
           <li class="main-logo-container">
-			<a href="index.html">
-            <img class="logo-image" src="img/logo-red-fixed.png" alt="Luigi's Logo">
-			</a>
+            <a href="index.html">
+              <img class="logo-image" src="img/logo-red-fixed.png" alt="Luigi's Logo">
+            </a>
           </li>
           <li class="nav-item">
             <a class="nav-link-btn" href="#">About</a>
@@ -61,115 +65,118 @@
         </ul>
       </nav>
     </header>
-<main>
-  <div>
+    <main>
+      <div>
 
-    <h2 style="text-align:center">Welcome in Our Gallery</h2><br><b>
-            <div class="row">
-              <div class="column">
-                <img src="img/1g.jpg" style="width:100%; height:230px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-              </div>
-              <div class="column">
-                <img src="img/2g.jpg" style="width:100%; height:230px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-              </div>
-              <div class="column">
-                <img src="img/3g.jpg" style="width:100%; height:230px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-              </div>
-              <div class="column">
-                <img src="img/4g.jpg" style="width:100%; height:230px" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-              </div>
+        <h2 style="text-align:center">Welcome in Our Gallery</h2>
+        <br>
+        <b>
+          <div class="row">
+            <div class="column">
+              <img src="img/1g.jpg" style="width:100%; height:230px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
             </div>
-            <br>
-            <div class="row">
-              <div class="column">
-                <img src="img/5g.jpg" style="width:100%; height:230px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-              </div>
-              <div class="column">
-                <img src="img/6b.jpg" style="width:100%; height:230px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-              </div>
-              <div class="column">
-                <img src="img/7b.jpg" style="width:100% ; height:230px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-              </div>
-              <div class="column">
-                <img src="img/8b.jpg" style="width:100%; height:230px" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-              </div>
+            <div class="column">
+              <img src="img/2g.jpg" style="width:100%; height:230px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
             </div>
+            <div class="column">
+              <img src="img/3g.jpg" style="width:100%; height:230px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+              <img src="img/4g.jpg" style="width:100%; height:230px" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="column">
+              <img src="img/5g.jpg" style="width:100%; height:230px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+              <img src="img/6b.jpg" style="width:100%; height:230px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+              <img src="img/7b.jpg" style="width:100% ; height:230px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+              <img src="img/8b.jpg" style="width:100%; height:230px" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+          </div>
 
 
           <div id="myModal" class="modal">
             <span class="close cursor" onclick="closeModal()">&times;</span>
-              <div class="modal-content">
+            <div class="modal-content">
 
-                  <div class="mySlides">
-                    <div class="numbertext">1 / 8</div>
-                    <img class="demo cursor" src="img/1g.jpg" style="width:100%" alt="Luigi's Restaurant">
-                  </div>
+              <div class="mySlides">
+                <div class="numbertext">1 / 8</div>
+                <img class="demo cursor" src="img/1g.jpg" style="width:100%" alt="Luigi's Restaurant">
+              </div>
 
-                  <div class="mySlides">
-                    <div class="numbertext">2 / 8</div>
-                    <img class="demo cursor" src="img/2g.jpg" style="width:100%" alt="Pizza Margarita">
-                  </div>
+              <div class="mySlides">
+                <div class="numbertext">2 / 8</div>
+                <img class="demo cursor" src="img/2g.jpg" style="width:100%" alt="Pizza Margarita">
+              </div>
 
-                  <div class="mySlides">
-                    <div class="numbertext">3 / 8</div>
-                    <img class="demo cursor" src="img/3g.jpg" style="width:100%" alt="Pizza Calzone">
-                  </div>
+              <div class="mySlides">
+                <div class="numbertext">3 / 8</div>
+                <img class="demo cursor" src="img/3g.jpg" style="width:100%" alt="Pizza Calzone">
+              </div>
 
-                  <div class="mySlides">
-                    <div class="numbertext">4 / 8</div>
-                    <img class="demo cursor" src="img/4g.jpg" style="width:100%" alt="Pizza Farinata">
-                  </div>
+              <div class="mySlides">
+                <div class="numbertext">4 / 8</div>
+                <img class="demo cursor" src="img/4g.jpg" style="width:100%" alt="Pizza Farinata">
+              </div>
 
-                  <div class="mySlides">
-                    <div class="numbertext">5 / 8</div>
-                    <img  class="demo cursor" src="img/5g.jpg" style="width:100%" alt="Italian Salad">
-                  </div>
+              <div class="mySlides">
+                <div class="numbertext">5 / 8</div>
+                <img class="demo cursor" src="img/5g.jpg" style="width:100%" alt="Italian Salad">
+              </div>
 
-                  <div class="mySlides">
-                    <div class="numbertext">6 / 8</div>
-                    <img class="demo cursor" src="img/6b.jpg" style="width:100%" alt="Feta Salad">
-                  </div>
+              <div class="mySlides">
+                <div class="numbertext">6 / 8</div>
+                <img class="demo cursor" src="img/6b.jpg" style="width:100%" alt="Feta Salad">
+              </div>
 
-                  <div class="mySlides">
-                    <div class="numbertext">7 / 8</div>
-                    <img  class="demo cursor" src="img/7b.jpg" style="width:100%" alt="Italian Gratin">
-                  </div>
+              <div class="mySlides">
+                <div class="numbertext">7 / 8</div>
+                <img class="demo cursor" src="img/7b.jpg" style="width:100%" alt="Italian Gratin">
+              </div>
 
-                  <div class="mySlides">
-                    <div class="numbertext">8 / 8</div>
-                    <img class="demo cursor" src="img/8b.jpg" style="width:100%" alt="Tiramisu">
-                  </div>
+              <div class="mySlides">
+                <div class="numbertext">8 / 8</div>
+                <img class="demo cursor" src="img/8b.jpg" style="width:100%" alt="Tiramisu">
+              </div>
 
-                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-                  <div class="caption-container">
-                  <p id="caption"></p>
-                  </div>
-                </div>
+              <div class="caption-container">
+                <p id="caption"></p>
               </div>
             </div>
-       </main>
+          </div>
+      </div>
+    </main>
 
-       <footer>
-         <div class="footer-content">
-           <div class="footer-left">
-             <span>&copy; 2018  &nbsp &nbsp    Brennan, Daly, Hanna, Salek</span>
-           </div>
-           <div class="footer-right">
-             <div class="sm-logo-holder">
-               <i class="fab fa-facebook-square"></i>
-             </div>
-             <div class="sm-logo-holder">
-               <i class="fab fa-instagram"></i>
-             </div>
-             <div class="sm-logo-holder">
-               <i class="fab fa-twitter"></i>
-             </div>
-           </div>
-         </div>
-       </footer>
-</div>
-</div>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+          <span>&copy; 2018 &nbsp &nbsp Brennan, Daly, Hanna, Salek</span>
+        </div>
+        <div class="footer-right">
+          <div class="sm-logo-holder">
+            <i class="fab fa-facebook-square"></i>
+          </div>
+          <div class="sm-logo-holder">
+            <i class="fab fa-instagram"></i>
+          </div>
+          <div class="sm-logo-holder">
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  </div>
 </body>
+
 </html>

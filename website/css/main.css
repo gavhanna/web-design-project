@@ -336,6 +336,10 @@ footer {
   top: 0;
 }
 
+.gallery-container {
+  margin: 30px auto;
+}
+
 img {
   margin-bottom: -4px;
   width: 100px;

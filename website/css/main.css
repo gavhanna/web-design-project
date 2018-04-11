@@ -654,3 +654,41 @@ img {
 }
 
 /* Menu End */
+
+/* Contact page */
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  font-family: "Amita";
+  width: 100vw;
+}
+
+.contact-info {
+  display: inline-block;
+  transform: translateY(-5px);
+}
+
+.contact-logo {
+  font-size: 2rem;
+}
+
+.contact-left {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-right {
+  align-self: flex-end;
+}
+
+.map-iframe {
+  max-height: 100%;
+  height: 400px;
+  max-width: 100vw;
+  width: 400px;
+}
+
+/* Contact End */

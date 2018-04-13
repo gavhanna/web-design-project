@@ -19,7 +19,7 @@
 
 <body>
   <!-- This element holds the background image -->
-  <div class="bg-image"></div>
+  <div class="about-image"></div>
   <div id="wrapper">
     <header>
       <div class="menu-button" id="menu-button"></div>
@@ -64,38 +64,51 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <div class="contact-container">
-        <div class="contact-left">
-          <div class="contact-logo-holder">
-            <i class="fas fa-envelope contact-logo"></i>
-            <span class="contact-info">info@luigis.com</span>
-          </div>
-          <div class="contact-logo-holder">
-            <i class="fas fa-phone contact-logo"></i>
-            <span class="contact-info">+353 01 848 5555</span>
-          </div>
-          <div class="contact-logo-holder">
-            <i class="fab fa-facebook-square contact-logo"></i>
-            <span class="contact-info">Follow us!</span>
-          </div>
-          <div class="contact-logo-holder">
-            <i class="fab fa-instagram contact-logo"></i>
-            <span class="contact-info">Look at us!</span>
-          </div>
-          <div class="contact-logo-holder">
-            <i class="fab fa-twitter contact-logo"></i>
-            <span class="contact-info">Listen to us!</span>
-          </div>
-        </div>
-        <div class="contact-right">
-          <iframe class="map-iframe" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAu8oiVbmtT9hL8UJBFy0hwX4QC1lelu8Y
-                &q=Dame+Street,Dublin+Ireland" allowfullscreen>
-          </iframe>
-        </div>
+    <main id="about-container">
+		<div class="about-types">
+			<div class="about-type">
+				<h1>Get to know us!</h1>
+					<p>Founded in 2007, Luigi's prides itself on bringing an authentic Italian experience to you. All our food is handmade and fresh daily. Our recipies go back centuries !</p><br>
+					<p>Situated in the heart of Dublin City, Luigi's offers you the very best of Italian cuisine.</p><br>
+					<p>Luigi's has picked up the James Beard award(2008), The Luna Award(2009) and the Italia del Gusto (2012).</p><br><br>
+				
+				<hr class="style1">
+				
+				<br>
+				<br>
+					<p>Our Executive Chef is the legendary Michael Corleone. Born in Trapani, Sicily, Michael brings to you an incredible Italian menu, that you will never forget.</p><br>
+					<p>Come inside and enjoy authentic dishes and genuine welcoming Italian service, or just sit  with a glass of wine and a plate of antipasti and watch the world go by.</p><br>
+					<p>We look forward to welcoming you very soon!</p>
+			</div>
+			<br>
+		<!-- Info -->
+		
+	  <!-- Slideshow container -->
+	<div class="slideshow-container">
 
-      </div>
-    </main>
+	<!-- Full-width images with number and caption text -->
+		<div class="mySlides fade">
+			<img src="img/backgrounds/chef.jpg" style="width:100%">
+			<div class="text">Michael Corleone</div>
+		</div>
+
+		<div class="mySlides fade">
+			<img src="img/backgrounds/food.jpg" style="width:100%">
+			<div class="text">Authentic Italian Cuisine</div>
+		</div>
+
+		<div class="mySlides fade">
+			<img src="img/backgrounds/interior2.jpg" style="width:100%">
+			<div class="text">Luigi's Restaurant</div>
+		</div>
+
+	<!-- Next and previous buttons -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+	<br>
+	</main>
     <footer>
       <div class="footer-content">
         <div class="footer-left">
@@ -119,5 +132,3 @@
 </body>
 
 </html>
-
-<!-- AIzaSyAu8oiVbmtT9hL8UJBFy0hwX4QC1lelu8Y -->
